@@ -1,7 +1,7 @@
 # Day 1
-
+(I didn't save part 1 :D)
 ## Part 2
-```
+```python
 list = []
 with open('input') as file:
     for line in file:
