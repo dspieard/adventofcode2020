@@ -4,23 +4,10 @@
 ```python
 seats = []
 
-# https://www.geeksforgeeks.org/binary-decimal-vice-versa-python/
-def binaryToDecimal(binary):
-    binary = int(binary)
-    decimal, i, n = 0, 0, 0
-    while (binary != 0):
-        dec = binary % 10
-        decimal = decimal + dec * pow(2, i)
-        binary = binary // 10
-        i += 1
-    return decimal
-
-
 with open('input5') as file:
     for line in file:
-        line = line.strip()
         binary = str(line.replace('F', '0').replace('B', '1').replace('R', '1').replace('L','0'))
-        decimal = binaryToDecimal(binary)
+        decimal = int(binary,2)
         seats.append(decimal)
 
 # Part 1
