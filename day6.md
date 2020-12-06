@@ -6,12 +6,11 @@ with open('input6') as file:
     data = file.read()
     split = data.split("\n\n")
     for l in split:
-        questions_yes = []
+        questions_yes = {}
         temp = l.replace('\n', '')
         for character in temp:
-            questions_yes.append(character)
-        questions_yes_without_dup = set(questions_yes)
-        total += len(questions_yes_without_dup)
+            questions_yes.add(character)
+        total += len(questions_yes)
 print(total)
 ```
 
