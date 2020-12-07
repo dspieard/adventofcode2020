@@ -2,7 +2,7 @@
 ## Part 1 & 2
 
 ```python
-bags = dict()
+bags = {}
 total = 0
 count = 0
 
